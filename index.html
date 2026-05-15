@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>movieys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-container">
+
+  <section class="search-card">
+    <h1>What movie you are looking for?</h1>
+
+    <input 
+      type="text" 
+      id="movieInput" 
+      placeholder="Type something..."
+    >
+
+    <button id="searchButton">SEARCH FOR IT!!</button>
+  </section>
+
+  <p id="message"></p>
+
+  <section id="movieCard" class="movie-card hidden">
+
+    <div class="poster-frame">
+      <img id="moviePoster" src="" alt="Movie poster">
+    </div>
+
+    <div class="movie-info">
+      <h2 id="movieTitle"></h2>
+      <p><strong>Year:</strong> <span id="movieYear"></span></p>
+      <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+      <p><strong>Director:</strong> <span id="movieDirector"></span></p>
+      <p><strong>Runtime:</strong> <span id="movieRuntime"></span></p>
+      <p><strong>Rating:</strong> <span id="movieRating"></span></p>
+      <p><strong>Plot:</strong> <span id="moviePlot"></span></p>
+    </div>
+
+  </section>
+
+  <p class="enjoy-text">Enjoy your movie!</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
