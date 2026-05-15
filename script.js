@@ -42,6 +42,7 @@ async function searchMovie() {
     if (data.Response === "False") {
     message.textContent = "Oopsie... couldn't find that movie!";
     movieCard.classList.add("hidden");
+    localStorage.removeItem("lastMovie");
     return;
 }
 
